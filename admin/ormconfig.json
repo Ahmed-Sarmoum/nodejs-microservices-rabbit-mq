@@ -1,0 +1,15 @@
+{
+    "type": "postgres",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "username": "root",
+    "password": "root",
+    "database": "node_microservices",
+    "entities": [
+        "src/entity/*.js"
+    ],
+    "synchronize": true,
+    "logging": false,
+    "subscribers": [],
+    "migrations": []
+}

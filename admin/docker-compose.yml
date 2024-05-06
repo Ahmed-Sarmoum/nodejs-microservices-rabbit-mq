@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres
+    container_name: mypostgresdb
+    environment:
+      POSTGRES_DB: node_microservices
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+    # Use a named volume to persist PostgreSQL data
+    driver: local
