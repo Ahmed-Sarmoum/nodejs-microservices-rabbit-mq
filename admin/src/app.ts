@@ -4,6 +4,8 @@ import { Request, Response } from "express";
 import { createConnection } from "typeorm";
 import { Product } from "./entity/Product";
 
+//amqps://uupjjhlr:7a5KaROAFuN4c6vlz9gM2Pr1CSHmjX0S@gull.rmq.cloudamqp.com/uupjjhlr
+
 createConnection().then((db) => {
   const productRepository = db.getRepository(Product);
   const app = express();

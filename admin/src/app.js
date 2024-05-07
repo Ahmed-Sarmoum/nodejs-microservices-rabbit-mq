@@ -40,6 +40,7 @@ var express = require("express");
 var cors = require("cors");
 var typeorm_1 = require("typeorm");
 var Product_1 = require("./entity/Product");
+//amqps://uupjjhlr:7a5KaROAFuN4c6vlz9gM2Pr1CSHmjX0S@gull.rmq.cloudamqp.com/uupjjhlr
 (0, typeorm_1.createConnection)().then(function (db) {
     var productRepository = db.getRepository(Product_1.Product);
     var app = express();
